@@ -377,7 +377,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 9.293241
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -500,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 774519630}
   - component: {fileID: 774519629}
+  - component: {fileID: 774519631}
   m_Layer: 0
   m_Name: Lichaam
   m_TagString: Untagged
@@ -574,6 +575,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1271221517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &774519631
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774519628}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0389297, y: -0.060913272}
+  m_Size: {x: 0.8389741, y: 0.7781982}
+  m_Direction: 0
 --- !u!1 &1271221516
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +741,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _VoorwielRB: {fileID: 180685659}
   _AchterwielRB: {fileID: 1792324071}
+  _VoertuigRB: {fileID: 1271221518}
   _speed: 1000
+  _rotationSpeed: 300
   _moveInput: 0
 --- !u!1 &1639894211
 GameObject:
@@ -1002,7 +1040,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.16, y: -2.58, z: 0}
-  m_LocalScale: {x: 240, y: 1, z: 1}
+  m_LocalScale: {x: 24, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1165,6 +1203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2098128520}
   - component: {fileID: 2098128519}
+  - component: {fileID: 2098128521}
   m_Layer: 0
   m_Name: Hoofd
   m_TagString: Untagged
@@ -1239,6 +1278,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1271221517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2098128521
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098128518}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.021627545, y: -0.0043254495}
+  serializedVersion: 2
+  m_Radius: 0.933958
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
