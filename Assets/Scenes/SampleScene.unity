@@ -705,7 +705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _VoorwielRB: {fileID: 180685659}
   _AchterwielRB: {fileID: 1792324071}
-  _speed: 150
+  _speed: 1000
   _moveInput: 0
 --- !u!1 &1639894211
 GameObject:
