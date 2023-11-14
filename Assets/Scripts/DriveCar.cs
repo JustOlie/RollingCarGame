@@ -10,7 +10,7 @@ public class vechicleMove : MonoBehaviour
     [SerializeField] private float _speed = 150f;
     public float _moveInput;
 
-    private void update()
+    private void Update()
     {
         _moveInput = Input.GetAxisRaw("Horizontal");
     }
