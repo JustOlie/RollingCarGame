@@ -13,20 +13,20 @@ public class GameManager : MonoBehaviour
     {
         if (instance == null)
         {
-            instance = this;   
+            instance = this;
         }
 
-        Time.timescale = 1f;
+        Time.timeScale = 1f;
     }
 
     public void GameOver()
     {
         _gameOverCanvas.SetActive(true);
-        Time.timescale = 0f;
+        Time.timeScale = 0f;
     }
 
     public void RestartGame()
     {
-        SceneManager.Loadscene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
